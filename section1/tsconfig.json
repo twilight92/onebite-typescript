@@ -3,10 +3,9 @@
     "target": "ES5",
     "module": "CommonJS",
     "outDir": "dist",
+    "skibLibCheck": true,
     "strict": true,
     "moduleDetection": "force"
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src"]
 }
