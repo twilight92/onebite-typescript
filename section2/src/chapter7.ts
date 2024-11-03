@@ -10,10 +10,3 @@ function func1(): string {
 function func2(): void {
   console.log("hello");
 }
-
-let a: void;
-a = 1;
-a = "hello";
-a = {};
-a = undefined;
-a = null;
