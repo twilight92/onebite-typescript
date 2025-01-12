@@ -7,23 +7,22 @@
 type Person = {
   name: string;
   age: number;
-}
+};
 
 let person: Person = {} as Person;
-person.name = '이정환';
+person.name = "이정환";
 person.age = 27;
 
 type Dog = {
   name: string;
   color: string;
-}
+};
 
 let dog = {
   name: "돌돌이",
   color: "brown",
-  breed: "진도"
-} as Dog
-
+  breed: "진도",
+} as Dog;
 
 /**
  * 타입 단언의 규칙
@@ -58,12 +57,12 @@ let cat = {
 type Post = {
   title: string;
   author?: string; // 선택자 프로퍼티(있을수도 없을수도)
-}
+};
 
 let post: Post = {
   title: "게시글1",
-  author: "이정환"
-}
+  author: "이정환",
+};
 
 // const len: number = post.author?.length; // 옵셔널 체이닝(undefined가 될 수 있어서 오류 발생)
 const len: number = post.author!.length; // Non Null 단언(null이나 undefined가 아닐 거라고 타입스크립트가 믿도록 함)
